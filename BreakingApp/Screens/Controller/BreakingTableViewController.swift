@@ -8,6 +8,7 @@
 import UIKit
 
 class BreakingTableViewController: UITableViewController{
+    
     private var responseFetch: BreakingModel?{
         didSet{
             DispatchQueue.main.async {
@@ -34,22 +35,7 @@ class BreakingTableViewController: UITableViewController{
             }
         }.resume()
     }
-    private func imageFetch(with url: String?, competion: @escaping (Data) -> Void){
-        if let urlString = url, let url = URL(string: urlString){
-            let request = URLRequest(url: url)
-            URLSession.shared.dataTask(with: request) { data, response, error in
-                if let error = error {
-                    debugPrint(error)
-                    return
-                }
-                if let data = data {
-                    DispatchQueue.main.async {
-                        competion(data)
-                    }
-                }
-            }.resume()
-        }
-    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -77,7 +63,6 @@ class BreakingTableViewController: UITableViewController{
         performSegue(withIdentifier: "toDetailVC", sender: nil)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if let viewController = segue.destination as? DetailViewController {
             viewController.articles = selectedTitle
         }

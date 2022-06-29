@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D0A47F6286C706C00AA7728 /* ImageFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A47F5286C706C00AA7728 /* ImageFetch.swift */; };
 		7D0DF79628688B1600360ADB /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DF79528688B1600360ADB /* Articles.swift */; };
 		7D3B4F4D286873940003487F /* BreakingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B4F4C286873940003487F /* BreakingTableViewController.swift */; };
 		7D3B4F4F286873E50003487F /* BreakingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B4F4E286873E50003487F /* BreakingTableViewCell.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D0A47F5286C706C00AA7728 /* ImageFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetch.swift; sourceTree = "<group>"; };
 		7D0DF79528688B1600360ADB /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
 		7D3B4F4C286873940003487F /* BreakingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingTableViewController.swift; sourceTree = "<group>"; };
 		7D3B4F4E286873E50003487F /* BreakingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingTableViewCell.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D0A47F4286C704400AA7728 /* FetchRequest */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A47F5286C706C00AA7728 /* ImageFetch.swift */,
+			);
+			path = FetchRequest;
+			sourceTree = "<group>";
+		};
 		7D868EB5286C35E300A95E61 /* Api */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +105,7 @@
 		7DD5E9CC28683F41001B131D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				7D0A47F4286C704400AA7728 /* FetchRequest */,
 				7D868EB5286C35E300A95E61 /* Api */,
 				7DF95EBC2868A5490013C0D3 /* DetailView */,
 				7DD5E9D02868401B001B131D /* View */,
@@ -228,6 +239,7 @@
 				7D3B4F4D286873940003487F /* BreakingTableViewController.swift in Sources */,
 				7D0DF79628688B1600360ADB /* Articles.swift in Sources */,
 				7DD5E9BA28683F2A001B131D /* SceneDelegate.swift in Sources */,
+				7D0A47F6286C706C00AA7728 /* ImageFetch.swift in Sources */,
 				7DF95EC02868A5B00013C0D3 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
