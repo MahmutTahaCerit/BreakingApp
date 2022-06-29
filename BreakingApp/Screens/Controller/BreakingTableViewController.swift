@@ -22,7 +22,7 @@ class BreakingTableViewController: UITableViewController{
         dataFetch()
     }
     private func dataFetch(){
-        guard let url = URL(string: "https://newsapi.org/v2/top-headlines?country=tr&apiKey=\(apiKey)")else { return}
+        guard let url = URL(string: "https://newsapi.org/v2/top-headlines?country=tr&pageSize=100&apiKey=\(apiKey)")else { return}
         let request = URLRequest(url: url)
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
