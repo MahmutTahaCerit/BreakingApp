@@ -1,18 +1,17 @@
 //
-//  BreakingTableViewCell.swift
+//  SportsTableViewCell.swift
 //  BreakingApp
 //
-//  Created by Mahmut Taha Cerit on 26.06.2022.
+//  Created by Mahmut Taha Cerit on 29.06.2022.
 //
 
 import UIKit
 
-class BreakingTableViewCell: UITableViewCell {
+class SportsTableViewCell: UITableViewCell {
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var breakingImageView: UIImageView!
-    
+    @IBOutlet weak var urlImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

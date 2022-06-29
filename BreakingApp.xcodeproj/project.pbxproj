@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		7D0A47F6286C706C00AA7728 /* ImageFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A47F5286C706C00AA7728 /* ImageFetch.swift */; };
 		7D0DF79628688B1600360ADB /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DF79528688B1600360ADB /* Articles.swift */; };
-		7D3B4F4D286873940003487F /* BreakingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B4F4C286873940003487F /* BreakingTableViewController.swift */; };
-		7D3B4F4F286873E50003487F /* BreakingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B4F4E286873E50003487F /* BreakingTableViewCell.swift */; };
+		7D3B4F4D286873940003487F /* GeneralTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B4F4C286873940003487F /* GeneralTableViewController.swift */; };
+		7D3B4F4F286873E50003487F /* GeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B4F4E286873E50003487F /* GeneralTableViewCell.swift */; };
+		7D7C19E8286CAF4C00C6FF93 /* SportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C19E7286CAF4C00C6FF93 /* SportsTableViewCell.swift */; };
+		7D7C19EA286CAF5900C6FF93 /* EntertainmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C19E9286CAF5900C6FF93 /* EntertainmentTableViewCell.swift */; };
+		7D7C19EC286CAF7E00C6FF93 /* SportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C19EB286CAF7E00C6FF93 /* SportsTableViewController.swift */; };
+		7D7C19EE286CAFB200C6FF93 /* EntertainmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C19ED286CAFB200C6FF93 /* EntertainmentTableViewController.swift */; };
 		7D868EB4286C35D700A95E61 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D868EB3286C35D700A95E61 /* ApiKey.swift */; };
 		7DD5E9B828683F2A001B131D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD5E9B728683F2A001B131D /* AppDelegate.swift */; };
 		7DD5E9BA28683F2A001B131D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD5E9B928683F2A001B131D /* SceneDelegate.swift */; };
@@ -25,8 +29,12 @@
 /* Begin PBXFileReference section */
 		7D0A47F5286C706C00AA7728 /* ImageFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetch.swift; sourceTree = "<group>"; };
 		7D0DF79528688B1600360ADB /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
-		7D3B4F4C286873940003487F /* BreakingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingTableViewController.swift; sourceTree = "<group>"; };
-		7D3B4F4E286873E50003487F /* BreakingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingTableViewCell.swift; sourceTree = "<group>"; };
+		7D3B4F4C286873940003487F /* GeneralTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTableViewController.swift; sourceTree = "<group>"; };
+		7D3B4F4E286873E50003487F /* GeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTableViewCell.swift; sourceTree = "<group>"; };
+		7D7C19E7286CAF4C00C6FF93 /* SportsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTableViewCell.swift; sourceTree = "<group>"; };
+		7D7C19E9286CAF5900C6FF93 /* EntertainmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntertainmentTableViewCell.swift; sourceTree = "<group>"; };
+		7D7C19EB286CAF7E00C6FF93 /* SportsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTableViewController.swift; sourceTree = "<group>"; };
+		7D7C19ED286CAFB200C6FF93 /* EntertainmentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntertainmentTableViewController.swift; sourceTree = "<group>"; };
 		7D868EB3286C35D700A95E61 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
 		7DD5E9B428683F2A001B131D /* BreakingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD5E9B728683F2A001B131D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,7 +145,9 @@
 		7DD5E9CF28684009001B131D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7D3B4F4C286873940003487F /* BreakingTableViewController.swift */,
+				7D3B4F4C286873940003487F /* GeneralTableViewController.swift */,
+				7D7C19ED286CAFB200C6FF93 /* EntertainmentTableViewController.swift */,
+				7D7C19EB286CAF7E00C6FF93 /* SportsTableViewController.swift */,
 				7DF95EBF2868A5B00013C0D3 /* DetailViewController.swift */,
 			);
 			path = Controller;
@@ -147,7 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				7DD5E9BD28683F2A001B131D /* Main.storyboard */,
-				7D3B4F4E286873E50003487F /* BreakingTableViewCell.swift */,
+				7D3B4F4E286873E50003487F /* GeneralTableViewCell.swift */,
+				7D7C19E9286CAF5900C6FF93 /* EntertainmentTableViewCell.swift */,
+				7D7C19E7286CAF4C00C6FF93 /* SportsTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,12 +245,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DD5E9B828683F2A001B131D /* AppDelegate.swift in Sources */,
-				7D3B4F4F286873E50003487F /* BreakingTableViewCell.swift in Sources */,
+				7D3B4F4F286873E50003487F /* GeneralTableViewCell.swift in Sources */,
 				7D868EB4286C35D700A95E61 /* ApiKey.swift in Sources */,
 				7DD5E9D228684040001B131D /* BreakingModel.swift in Sources */,
-				7D3B4F4D286873940003487F /* BreakingTableViewController.swift in Sources */,
+				7D7C19EC286CAF7E00C6FF93 /* SportsTableViewController.swift in Sources */,
+				7D7C19E8286CAF4C00C6FF93 /* SportsTableViewCell.swift in Sources */,
+				7D3B4F4D286873940003487F /* GeneralTableViewController.swift in Sources */,
+				7D7C19EE286CAFB200C6FF93 /* EntertainmentTableViewController.swift in Sources */,
 				7D0DF79628688B1600360ADB /* Articles.swift in Sources */,
 				7DD5E9BA28683F2A001B131D /* SceneDelegate.swift in Sources */,
+				7D7C19EA286CAF5900C6FF93 /* EntertainmentTableViewCell.swift in Sources */,
 				7D0A47F6286C706C00AA7728 /* ImageFetch.swift in Sources */,
 				7DF95EC02868A5B00013C0D3 /* DetailViewController.swift in Sources */,
 			);

@@ -1,13 +1,13 @@
 //
-//  BreakingTableViewController.swift
+//  EntertainmentTableViewController.swift
 //  BreakingApp
 //
-//  Created by Mahmut Taha Cerit on 26.06.2022.
+//  Created by Mahmut Taha Cerit on 29.06.2022.
 //
 
 import UIKit
 
-class BreakingTableViewController: UITableViewController{
+class EntertainmentTableViewController: UITableViewController{
     
     private var responseFetch: BreakingModel?{
         didSet{
@@ -19,11 +19,10 @@ class BreakingTableViewController: UITableViewController{
     private var selectedTitle: Articles?
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Son Dakika Haberler"
         dataFetch()
     }
     private func dataFetch(){
-        guard let url = URL(string: "https://newsapi.org/v2/top-headlines?country=tr&pageSize=100&apiKey=\(apiKey)")else { return}
+        guard let url = URL(string: "https://newsapi.org/v2/top-headlines?country=tr&pageSize=100&category=entertainment&apiKey=\(apiKey)")else { return}
         let request = URLRequest(url: url)
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
@@ -49,18 +48,18 @@ class BreakingTableViewController: UITableViewController{
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let articles = responseFetch?.articles?[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! BreakingTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EntertainmentCell", for: indexPath) as! EntertainmentTableViewCell
         cell.authorLabel.text = articles?.author
         cell.descriptionLabel.text = articles?.description
         cell.titleLabel.text = articles?.title
         imageFetch(with: articles?.urlToImage) { data in
-            cell.breakingImageView.image = UIImage(data: data)
+            cell.urlImageView.image = UIImage(data: data)
         }
         return cell
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedTitle = responseFetch?.articles?[indexPath.row]
-        performSegue(withIdentifier: "toDetailVC", sender: nil)
+        performSegue(withIdentifier: "toEntertainmentDetailVC", sender: nil)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let viewController = segue.destination as? DetailViewController {
