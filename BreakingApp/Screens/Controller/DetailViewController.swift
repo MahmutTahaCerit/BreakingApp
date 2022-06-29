@@ -23,7 +23,10 @@ class DetailViewController: UIViewController {
         }
     }
     @IBAction func urlButton(_ sender: Any) {
-        
+        guard let link = articles?.url else { return }
+        if let url = URL(string:link){
+            UIApplication.shared.open(url)
+        }
     }
     private func görselAl(with url: String?, competion: @escaping (Data) -> Void){
         if let urlString = url, let url = URL(string: urlString){
